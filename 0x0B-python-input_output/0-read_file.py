@@ -1,12 +1,4 @@
 #!/usr/bin/python3
-"""
-a function that reads a text file (UTF8) and prints it to stdout
-"""
+read_file = __import__('0-read_file').read_file
 
-
-def read_file(filename=""):
-    """
-    a function that reads a text file (UTF8) and prints it to stdout
-    """
-    with open(filename, "r", encoding="utf-8") as f:
-        print(f.read(), end="")
+read_file("my_file_0.txt")
