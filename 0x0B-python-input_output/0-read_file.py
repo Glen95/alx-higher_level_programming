@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""read_file
-"""
+'''
+Module to read and print contents of a file
+'''
 
 
 def read_file(filename=""):
-    """Takes in str filename to read it
-    """
-
-    with open(filename, encoding="utf-8") as readFile:
-        print(readFile.read(), end='')
+    ''' Reads file and prints contents '''
+    with open(filename) as open_file:
+        contents = open_file.read()
+    print(contents, end="")
